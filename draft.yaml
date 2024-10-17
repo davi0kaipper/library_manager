@@ -1,0 +1,19 @@
+models:
+  Author:
+    name: string
+    biography: text
+    status: string
+    relationships:
+      hasMany: Book
+
+  Book:
+    title: string
+    summary: text
+    published_at: datetime
+    relationships:
+      belongsToMany: Author, Category
+
+  Category:
+    name: string
+    relationships:
+      hasMany: Book

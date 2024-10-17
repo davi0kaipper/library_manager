@@ -1,0 +1,17 @@
+created:
+    - database/factories/AuthorFactory.php
+    - database/factories/BookFactory.php
+    - database/factories/CategoryFactory.php
+    - database/migrations/2024_10_17_143236_create_authors_table.php
+    - database/migrations/2024_10_17_143237_create_books_table.php
+    - database/migrations/2024_10_17_143238_create_categories_table.php
+    - database/migrations/2024_10_17_143239_create_author_book_table.php
+    - database/migrations/2024_10_17_143240_create_book_category_table.php
+    - app/Models/Author.php
+    - app/Models/Book.php
+    - app/Models/Category.php
+models:
+    User: { name: string, email: string, email_verified_at: 'timestamp nullable', password: string, remember_token: 'string:100 nullable' }
+    Author: { name: string, biography: text, status: string, relationships: { hasMany: Book } }
+    Book: { title: string, summary: text, published_at: datetime, relationships: { belongsToMany: 'Author, Category' } }
+    Category: { name: string, relationships: { hasMany: Book } }
