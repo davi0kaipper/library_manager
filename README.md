@@ -9,7 +9,7 @@ This will clone the project to your folder of preference.
 
 ## Database Configuration
 
-Create a database with the name: **library_management** or any other of your preference, just remember that the db name should be configured in the .env file on the *DB_DATABASE* variable, together with your username and password on *DB_USERNAME* and *DB_PASSWORD* vars. Then run `php artisan migrate` on your command line to create the database.
+Create a database with the name: **library_management** or any other of your preference, just remember that the database name should be configured in the .env file on the *DB_DATABASE* variable, together with your username and password on *DB_USERNAME* and *DB_PASSWORD* variables, respectively. Then run `php artisan migrate` on your command line to create the database.
 
 ## Configuring Front-End Assets
 
@@ -25,6 +25,6 @@ On another tab of your command line, enter: `php artisan serve`
 
 ## Effectively Using the App
 
-Access localhost:8000/ on you browser to use the application by logging in and creating the records as you see fit.
+Access localhost:8000/ on you browser to use the application by logging in and creating the records, first Categories and Authors, then Books.
 
 Enjoy :>
